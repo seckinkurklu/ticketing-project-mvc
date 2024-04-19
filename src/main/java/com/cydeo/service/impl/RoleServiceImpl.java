@@ -8,13 +8,13 @@ import java.util.List;
 public class RoleServiceImpl extends AbstractMapService<RoleDTO, Long> implements RoleService {
 
     @Override
-    public RoleDTO save(RoleDTO user) {
-        return null;
+    public RoleDTO save(RoleDTO role) {
+        return super.save(role.getId(), role);
     }
 
     @Override
-    public RoleDTO findById(Long username) {
-        return null;
+    public RoleDTO findById(Long id) {
+        return super.findById(id);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class RoleServiceImpl extends AbstractMapService<RoleDTO, Long> implement
     }
 
     @Override
-    public void deleteById(Long username) {
-
+    public void deleteById(Long id) {
+        super.deleteById(id);
     }
 }
