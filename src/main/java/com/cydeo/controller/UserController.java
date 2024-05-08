@@ -28,7 +28,7 @@ public class UserController {
 
       model.addAttribute("user", new UserDTO());
       model.addAttribute("roles", roleService.findAll());
-      model.addAttribute("users", userService);
+      model.addAttribute("users", userService.findAll());
 
         return "/user/create";
 
@@ -42,6 +42,10 @@ public class UserController {
         return "redirect:/user/create";
 
     }
+
+
+
+
 
 
 }
