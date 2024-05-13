@@ -53,4 +53,12 @@ public class UserController {
     }
 
 
+    @PostMapping("/update")
+    public String updateUser() {
+
+
+        return "redirect:/user/create";
+    }
+
+
 }
