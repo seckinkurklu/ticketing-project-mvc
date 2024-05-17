@@ -1,11 +1,12 @@
 package com.cydeo.service.impl;
 
 import com.cydeo.dto.ProjectDTO;
-import com.cydeo.service.CrudService;
 import com.cydeo.service.ProjectService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProjectServiceImpl extends AbstractMapService<ProjectDTO, String> implements ProjectService {
 
     @Override
@@ -30,6 +31,6 @@ public class ProjectServiceImpl extends AbstractMapService<ProjectDTO, String> i
 
     @Override
     public void deleteById(String projectCode) {
-super.deleteById(projectCode);
+        super.deleteById(projectCode);
     }
 }
